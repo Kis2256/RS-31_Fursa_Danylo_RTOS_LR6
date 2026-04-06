@@ -47,3 +47,9 @@ STM32F411, навчитися використовувати апаратні т
 - Кнопка: VDD → Кнопка → пін PC13.
   
 Відео роботи:
+
+
+https://github.com/user-attachments/assets/5b3c5cf3-70e0-4876-aafd-a4bf9b32c60f
+
+
+
