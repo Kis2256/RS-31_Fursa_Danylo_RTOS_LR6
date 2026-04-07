@@ -18,7 +18,7 @@ STM32F411, навчитися використовувати апаратні т
 Варіант 5. Запрограмувати одночасну генерацію ШІМ на PD12, PD13, PD14, PD15 з різними частотами (1 
 кГц, 2 кГц, 500 Гц, 5 кГц), кнопка PA0 керує duty cycle тільки PD12
 
-Загальний опис функціоналу 💡
+💡 Загальний опис функціоналу
 
 Програма демонструє використання апаратних таймерів для генерації сигналів широтно-імпульсної модуляції (ШІМ) з різними несучими частотами.
 Оскільки генерація ШІМ відбувається виключно на апаратному рівні периферії, центральний процесор мікроконтролера залишається вільним
@@ -37,16 +37,28 @@ STM32F411, навчитися використовувати апаратні т
 
 
 
-Схема підключення ⚙️
+⚙️ Схема підключення
 
-- LED 1: GND → Катод LED → Анод LED → резистор (220 Ом) → PA0.
-- LED 2: GND → Катод LED → Анод LED → резистор (220 Ом) → PA5
-- LED 3: GND → Катод LED → Анод LED → резистор (220 Ом) → PA6.
-- LED 4: GND → Катод LED → Анод LED → резистор (220 Ом) → PD12.
+Усі світлодіоди підключаються за стандартною схемою: Пін мікроконтролера → Анод (довга ніжка) → Катод (коротка ніжка) → Резистор (220 Ом) → GND (Земля).
+
+- LED 1: PA0.
+- LED 2: PA5
+- LED 3: PA6.
+- LED 4: PD12.
   
 - Кнопка: VDD → Кнопка → пін PC13.
+
+🎲 Налаштування в CubeMX
+
+<img width="1581" height="809" alt="image" src="https://github.com/user-attachments/assets/1859b09a-de55-42c8-a3a1-0f40f66cc747" />
+<img width="1561" height="843" alt="image" src="https://github.com/user-attachments/assets/222c8425-3cbb-4c1f-934c-a120b46cd117" />
+<img width="1596" height="819" alt="image" src="https://github.com/user-attachments/assets/4a58737f-9642-47b6-9813-ac25bc05d40d" />
+<img width="1565" height="778" alt="image" src="https://github.com/user-attachments/assets/56c8b315-f0f1-4b8c-8f72-11122573f93d" />
+<img width="701" height="684" alt="image" src="https://github.com/user-attachments/assets/33b20e4b-0249-4b58-8049-983a956effa4" />
+<img width="865" height="535" alt="image" src="https://github.com/user-attachments/assets/0e5be5b3-7ea9-4c08-a21b-0980783502f8" />
+
   
-Відео роботи:
+🎥 Відео роботи:
 
 
 https://github.com/user-attachments/assets/5b3c5cf3-70e0-4876-aafd-a4bf9b32c60f
